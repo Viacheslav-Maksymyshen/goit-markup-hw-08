@@ -1,0 +1,146 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+
+  &__item {
+    width: 271px;
+    margin-right: 30px;
+  }
+
+  &__list {
+    display: flex;
+  }
+}
+
+.footer-form {
+  &__item {
+    display: inline-flex;
+    align-items: center;
+
+    & input {
+      width: 358px;
+      height: 50px;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      font-size: 16px;
+      line-height: 0.8;
+      letter-spacing: 0.03em;
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+
+      background-color: var(--background-color);
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin-left: 12px;
+  padding-left: 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+
+  color: var(--white-color);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  border: none;
+
+  &__icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.footer-address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+
+  &__google-link {
+    color: var(--white-color);
+    text-decoration: none;
+  }
+  &__link {
+    color: var(--footer-link-color);
+  }
+}
+
+.footer-social {
+  &__item {
+    display: flex;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  &__icon {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 44px;
+    height: 44px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  &__link {
+    display: block;
+    fill: var(--white-color);
+    background-color: var(--social-footer-color);
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--blue-color);
+    }
+  }
+}

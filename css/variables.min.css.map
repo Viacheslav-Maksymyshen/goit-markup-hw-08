@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAC,CACJ,iBAAiB,CAAA,QAAC,CAClB,mBAAmB,CAAA,QAAC,CACpB,YAAY,CAAA,QAAC,CACb,aAAa,CAAA,KAAC,CACd,kBAAkB,CAAA,QAAC,CACnB,mBAAmB,CAAA,yBAAC,CACpB,uBAAuB,CAAA,QAAC,CACxB,yBAAyB,CAAA,QAAC,CAC1B,qBAAqB,CAAA,QAAC,CACtB,wBAAwB,CAAA,KAAC,CACzB,mBAAmB,CAAA,QAAC,CACpB,qBAAqB,CAAA,yBAAC,CACtB,wBAAwB,CAAA,QAAC,CACzB,2BAA2B,CAAA,mBAAC,CAC5B,+BAA+B,CAAA,sBAAC,CACjC",
+    "sources": [
+        "../sass/utils/variables.scss"
+    ],
+    "names": [],
+    "file": "variables.min.css"
+}
