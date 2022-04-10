@@ -9,6 +9,11 @@
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .nav {
   display: flex;
@@ -47,10 +52,25 @@
   display: flex;
   margin-left: auto;
   align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    padding: 0;
+  }
+}
+
+.nav-contakt {
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-left: 84px;
+  }
 }
 
 .nav-contakt__item:not(:last-child) {
   margin-right: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: 0;
+  }
 }
 
 .nav-contakt__icon {
