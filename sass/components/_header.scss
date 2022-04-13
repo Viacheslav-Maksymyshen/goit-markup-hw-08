@@ -21,17 +21,6 @@
   align-items: center;
 
   @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    &.is-open {
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
   }
@@ -48,9 +37,11 @@
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+  @media screen and (max-width: 1199px) {
+  }
 }
 
-.main-nav .link {
+.nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -78,10 +69,6 @@
   display: flex;
   margin-left: auto;
   align-items: center;
-
-  @media screen and (max-width: 1199px) {
-    padding: 0;
-  }
 }
 
 .nav-contakt {
@@ -108,11 +95,19 @@
 }
 
 .menu-button {
-  margin: 0;
-  padding: 0;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
   border: none;
   display: inline-flex;
   background-color: transparent;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button .icon-close {
@@ -125,4 +120,24 @@
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: $whiteColor;
+
+    &.is-open {
+      display: block;
+    }
+  }
 }

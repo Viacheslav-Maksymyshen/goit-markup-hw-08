@@ -2,6 +2,10 @@ body {
   font-family: $mainFont;
   color: $mainTextColor;
   background-color: $whiteColor;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 :active,
@@ -76,8 +80,7 @@ h5 {
   color: var(--main-text-color);
   text-decoration: none;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &__contakt {
     color: var(--second-text-color);
