@@ -21,6 +21,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      width: 100%;
     }
     @media screen and (max-width: 1199px) {
       flex-wrap: wrap;
@@ -158,7 +159,7 @@
 .footer-social {
   &__item {
     display: flex;
-    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 10px;
     width: 44px;
     height: 44px;
@@ -189,7 +190,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-right: -10px;
+    margin-left: -10px;
     margin-bottom: -10px;
 
     @media screen and (max-width: 1199px) {
@@ -209,5 +210,10 @@
     &:focus {
       background-color: var(--blue-color);
     }
+  }
+}
+.footer__item-form {
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 }
