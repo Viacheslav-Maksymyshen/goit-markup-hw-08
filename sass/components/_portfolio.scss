@@ -52,24 +52,31 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+
   margin-top: 50px;
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: -30px;
 
   & img {
     display: block;
+    width: 100%;
+    height: auto;
   }
 
   &__item {
-    margin-right: 30px;
+    margin-left: 30px;
     margin-bottom: 30px;
-    cursor: pointer;
-    flex-direction: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
 
+    cursor: pointer;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (max-width: 1199px) {
-      flex-direction: calc(100% / 2 - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
     }
 
     &:hover {
