@@ -13,6 +13,18 @@
     url('../images/bg-hero.jpg');
   background-color: var(--order-background-color);
 
+  @media screen and (max-width: 1199px) {
+    max-width: 768px;
+    min-height: 400px;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -23,7 +35,7 @@
     text-transform: uppercase;
     color: var(--white-color);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       font-size: 26px;
       line-height: 1.61;
     }
