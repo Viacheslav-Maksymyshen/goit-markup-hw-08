@@ -1,5 +1,6 @@
 .strengths {
   padding-bottom: 0;
+
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -8,9 +9,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
-    @media screen and (max-width: 767px) {
-      text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
     }
   }
   &__text {
@@ -28,24 +30,16 @@
     margin-bottom: -30px;
   }
   &__item {
-    flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+    flex-basis: 100%;
 
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-
-    //   @media screen and (max-width: 767px) {
-    //     margin-bottom: 30px;
-    //     margin-right: 0;
-    //   }
-    // }
-
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       flex-basis: calc(100% / 2 - 30px);
     }
-    @media screen and (max-width: 767px) {
-      flex-basis: 100%;
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
     }
   }
   &__icon-background {

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkForSpam(message) {
+        return ['sale', 'spam'].some(value => message.toLowerCase().includes(value));
+      }
+      checkForSpam('Get best sale offers now!');
+      checkForSpam('Amazing SalE, only tonight!');
+      checkForSpam('[SPAM] How to earn fast money?');
+      checkForSpam('Get rid of sPaM emails. Our book in on sale!');
+    </script>
+  </body>
+</html>

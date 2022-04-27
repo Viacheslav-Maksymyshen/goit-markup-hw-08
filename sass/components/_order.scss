@@ -1,46 +1,46 @@
 .order {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  min-height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
+  min-height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/bg-hero.jpg');
+    url('../images/bg-hero_tablet.jpg');
   background-color: var(--order-background-color);
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     max-width: 768px;
-    min-height: 400px;
-
-    padding-top: 118px;
-    padding-bottom: 118px;
-
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/bg-hero_tablet.jpg');
   }
 
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    min-height: 600px;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bg-hero.jpg');
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
 
-    @media screen and (max-width: 1199px) {
-      font-size: 26px;
-      line-height: 1.61;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
     }
   }
 

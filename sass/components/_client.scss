@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     fill: var(--social-team-color);
@@ -36,12 +36,12 @@
       border-color: var(--blue-color);
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       width: 226px;
     }
 
-    @media screen and (max-width: 767px) {
-      width: 210px;
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
   }
   &__icon {
